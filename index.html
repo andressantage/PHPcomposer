@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campuslands</title>
+    <link rel="stylesheet" href="prism.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+	<script src="prism.js"></script>
+</head>
+<body>
+    <h1>PHP: composer</h1>
+<p></p>
+<pre><code class="language-php">
+    /**
+    * 2.9. Composer
+    * Composer: administrador de dependencias para PHP que permite instalar librerías de terceros
+    * para facilitar el desarrollo con php. 
+    * *Composer es el equivalente a npm para node JS.
+    */
+
+   /**
+    * *Inicializar Composer en el proyecto
+    * 1. Abrir el proyecto
+    * 2. Ejecutar el comando composer init
+    */
+
+   /**
+    * 2.9.1. Autoload con composer
+    * Después de iniciar composer en el proyecto agregue el siguiente código a el archivo composer.json:
+    */
+   /* {
+       "name": "desarrollo/cursophp",
+       "description": "Curso php composer",
+       "authors": [
+           {
+               "name": "Johlver",
+               "email": "jjpardo2002@gmail.com"
+           }
+       ],
+       "require":{},
+       "autoload": { //esta parte es importante para lo del autoload
+           "psr-4": {
+               "App\\":"./clases"
+           }
+       }
+   }  */
+
+   /**
+    * Luego Ejecutar el comando composer update
+    * *composer update
+    */
+   
+   /* 
+   *se puede correr el siguiente codigo para revisar la funcionalidad
+       require 'vendor/autoload.php';
+       use App\Clientes;
+       use App\Detalles;
+       $cliente=new Clientes();
+       $detalle= new Detalles(); 
+   */
+</code></pre>
+
+<p>_________________________________________________</p>
+</body>
+</html>
