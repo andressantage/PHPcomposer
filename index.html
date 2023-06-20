@@ -10,10 +10,10 @@
 	<script src="prism.js"></script>
 </head>
 <body>
-    <h1>PHP: composer</h1>
+    <h1>PHP: composer 🐱‍🏍</h1>
 <p></p>
 <pre><code class="language-php">
-	Composer: herramienta de administración de paquetes para PHP.
+Composer: herramienta de administración de paquetes para PHP.
 
 Instalacion y documentacion: https://getcomposer.org/
 
@@ -46,45 +46,42 @@ composer run-script //ejecuta un script personalizado definido en el archivo com
 composer archive //crea un archivo ZIP o tarball de tu proyecto.
 composer global //permite administrar paquetes y configuraciones globales de Composer.
 
-	
-    //primero crear la carpeta clase_con_namespace y crear los documentos a continuacion: ClientesNamespace.php y DetallesNamespace.php
-    //en el documento ClientesNamespace.php se escribe 
-   /*namespace App;
+Primero crear la carpeta "clases" y crear los documentos a continuacion: "ClientesNamespace.php" y "DetallesNamespace.php"
+En el documento ClientesNamespace.php se escribe 
+&lt;?php
+    namespace App;
     
     class ClientesNamespace { 
         public function __construct(){
             echo "Desde la clase de ClientesNamespace.php<br>";
         }
-    } */
-
-    //en el documento DetallesNamespace.php se escribe esto
-   /*  namespace App;
+    } 
+?&gt;
+En el documento DetallesNamespace.php se escribe esto
+&lt;?php
+   namespace App;
     
     class DetallesNamespace { 
         public function __construct(){
             echo "Desde la clase de DetallesNamespace.php<br>";
         }
-    } */
-
+    }
+?&gt;
 	
-    /**
     * 2.9. Composer
     * Composer: administrador de dependencias para PHP que permite instalar librerías de terceros
     * para facilitar el desarrollo con php. 
     * *Composer es el equivalente a npm para node JS.
-    */
 
-   /**
     * *Inicializar Composer en el proyecto
     * 1. Abrir el proyecto
     * 2. Ejecutar el comando composer init
-    */
 
    /**
     * 2.9.1. Autoload con composer
     * Después de iniciar composer en el proyecto agregue el siguiente código a el archivo composer.json:
     */
-   /* {
+   {
        "name": "desarrollo/cursophp",
        "description": "Curso php composer",
        "authors": [
@@ -99,7 +96,7 @@ composer global //permite administrar paquetes y configuraciones globales de Com
                "App\\":"./clases"
            }
        }
-   }  */
+   } 
 
    /**
     * Luego Ejecutar el comando composer update
@@ -108,12 +105,14 @@ composer global //permite administrar paquetes y configuraciones globales de Com
    
    /* 
    *se puede correr el siguiente codigo para revisar la funcionalidad
+   */
+&lt;?php
        require 'vendor/autoload.php';
        use App\Clientes;
        use App\Detalles;
        $cliente=new Clientes();
        $detalle= new Detalles(); 
-   */
+?&gt;
 </code></pre>
 
 <p>_________________________________________________</p>
